@@ -28,3 +28,14 @@
     order: 1;
     flex-grow: 2;
 }
+
+
+.container-2 {
+    margin-top: 5vh;
+    border: 5px solid gold;
+    height: 800px;
+    display: flex;
+    flex-flow: row wrap;
+    /* align-content: space-evenly; */
+    column-gap: 30px;
+}
