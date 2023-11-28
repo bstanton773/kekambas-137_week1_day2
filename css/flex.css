@@ -1,4 +1,41 @@
 .container-1 {
     border: 5px solid navy;
     height: 500px;
+    /* flex properties for the Parent (aka Container) element */
+    display: flex;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    flex-flow: row; 
+    /* flex-flow is a combo of flex-direction + flex-wrap */
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Set all flex-items to have a flex-grow=1 */
+.container-1 > img {
+    flex-grow: 1;
+}
+
+/* Flex Properties for the Children (aka flex-items) element */
+#child-1 {
+    border: 2px solid indigo;
+    order: 3;
+    align-self: flex-start;
+}
+
+#child-2 {
+    border: 2px solid orangered;
+    order: 1;
+    flex-grow: 2;
+}
+
+
+.container-2 {
+    margin-top: 5vh;
+    border: 5px solid gold;
+    height: 800px;
+    display: flex;
+    flex-flow: row wrap;
+    /* align-content: space-evenly; */
+    column-gap: 30px;
 }
