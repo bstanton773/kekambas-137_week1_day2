@@ -129,8 +129,21 @@ aside ~ h3 {
 /* Pseudo Elements - used to style specified parts of an element */
 /* selector::psuedo-element{} */
 
+#first-line::first-letter {
+    color: blue;
+    font-size: 4em;
+}
+
+#first-line::first-line {
+    color: red;
+    font-variant: small-caps;
+}
 
 
+/* ::before or ::after will add content before or after the content of the element */
+#after-example::after {
+    content: url('https://picsum.photos/100')
+}
 
 /* Attribute Selectors - style HTML elements that have specific attributes or attribute values */
 /* selector[attribute]{} */
